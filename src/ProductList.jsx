@@ -254,10 +254,10 @@ const handlePlantsClick = (e) => {
   };
   const handleAddToCart =(item)=>{
     dispatch(addItem(item))
-    setAddedToCart((prevState)=>({
+    setAddedToCart((prevState) => ({
         ...prevState,
-        [item.name]: true,
-    }))
+        [item.name]: true, // Set the product name as key and value as true to indicate it's added to cart
+      }));
   }
     return (
         <div>
