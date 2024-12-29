@@ -216,7 +216,9 @@ body {
   }
   
   .product-button.added-to-cart {
-    background-color: grey; /* Grey when product is added */
+    background-color: grey;
+    cursor: not-allowed;
+    /* Grey when product is added */
   }
   @media (max-width: 1200px) {
     .product-card {
@@ -250,3 +252,15 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+#numberOfItems{
+    position: absolute;
+    margin-left: 2.5vw;
+    margin-top: 3.5vh;
+    font-size: 0.7em;
+    background-color: #c0392b;
+    width: 1.1em;
+    height: 1.1em;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
